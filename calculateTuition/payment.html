@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tuition Fee</title>
+  <link rel="stylesheet" href="payment.css">
+
+    <link rel="icon" type="image/x-icon" href="images.jpeg">
+</head>
+<body>
+  <div class="form-container">
+    <div class="form-box">
+      <h2>Student Payment Form</h2>
+      <form id="tuitionForm">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="tuition">Tuition Fee:</label><br>
+        <input type="number" id="tuition" name="tuition" required><br><br>
+
+        <label for="miscellaneous">Miscellaneous:</label><br>
+        <input type="number" id="miscellaneous" name="miscellaneous" required><br><br>
+
+        <label for="others">Others:</label><br>
+        <input type="number" id="others" name="others" required><br><br>
+
+        <button class="button" type="button" onclick="calculateTotal()">Submit</button>
+      </form>
+    </div>
+
+    <div class="result-box">
+      <h2 class="ey">Submitted</h2>
+        <div class="info-box">
+      <p id="display-name"></p>
+      <p id="display-tuition"></p>
+      <p id="display-miscellaneous"></p>
+      <p id="display-others"></p>
+      <h3 id="total"></h3>
+    </div>
+    </div>
+  </div>
+
+  <script src="payment.js"></script>
+</body>
+</html>
